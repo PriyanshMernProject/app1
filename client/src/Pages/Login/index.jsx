@@ -16,11 +16,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://3.110.153.253:3001/api/v1/user/login", {
+      const res = await fetch("http//:localhost:3001/api/v1/user/login", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
-          "Content-Type": "applicatio/json",
+          "Content-Type": "application/json",
         },
       });
       const result = await res.json();
